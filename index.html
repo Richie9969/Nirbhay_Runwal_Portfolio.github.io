@@ -48,6 +48,7 @@
     .card{border:1px solid #222;background:#141414;padding:1.8rem;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.4);transition:transform .3s;}
     .card:hover{transform:translateY(-4px);}    
     .card h3{font-family:"Bebas Neue",sans-serif;font-size:1.6rem;margin-bottom:.6rem;color:var(--accent);}    
+    .card p{line-height:1.55;}
 
     /* Timeline */
     #experience .timeline{position:relative;max-width:900px;margin:auto;}
@@ -61,14 +62,14 @@
     .entry h4{font-family:"Bebas Neue",sans-serif;font-size:1.4rem;margin-bottom:.4rem;}    
     .entry p{font-size:.95rem;line-height:1.5;}    
 
-    /* Projects — now vertical scroll */
+    /* Projects (vertical) */
     #projects .carousel{
       display:flex;
       flex-direction:column;
       gap:2rem;
       overflow-y:auto;
-      max-height:60vh;                 /* keeps list within section */
-      padding-right:1rem;              /* room for scrollbar */
+      max-height:60vh;
+      padding-right:1rem;
       scroll-snap-type:y mandatory;
     }
     #projects .item{
@@ -131,10 +132,50 @@
     <section id="skills" class="section">
       <h3 class="title">Skills</h3>
       <div class="grid">
-        <div class="card"><h3>Hardware &amp; Calibration</h3><p>BMS, VCU, HV Powertrain, FMEA, Power Electronics, Control systems</p></div>
-        <div class="card"><h3>Software &amp; Tools</h3><p>MATLAB/Simulink, AVL VSM, CANalyzer, LabVIEW, Altium, Multisim</p></div>
-        <div class="card"><h3>Programming &amp; Protocols</h3><p>Python, C/C++, CAN, LIN, Ethernet</p></div>
-        <div class="card"><h3>Testing &amp; Management</h3><p>Dyno Testing, RCA, Agile/Scrum, Six Sigma</p></div>
+        <div class="card">
+          <h3>Technical Expertise</h3>
+          <p>
+            BMS<br>
+            VCU<br>
+            HV Powertrain<br>
+            FMEA<br>
+            Power Electronics<br>
+            Control Systems
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Software &amp; Tools</h3>
+          <p>
+            MATLAB/Simulink<br>
+            AVL VSM<br>
+            CANalyzer<br>
+            LabVIEW<br>
+            Altium<br>
+            Multisim
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Programming &amp; Protocols</h3>
+          <p>
+            Python<br>
+            C/C++<br>
+            CAN<br>
+            LIN<br>
+            Ethernet
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Testing &amp; Management</h3>
+          <p>
+            Dyno Testing<br>
+            RCA<br>
+            Agile/Scrum<br>
+            Six Sigma
+          </p>
+        </div>
       </div>
     </section>
 
@@ -142,8 +183,8 @@
     <section id="experience" class="section">
       <h3 class="title">Experience</h3>
       <div class="timeline">
-        <div class="entry left"><h4>2022‑2023 • Lead Powertrain Engineer – MV Innovations</h4><p>Calibrated BMS &amp; VCUs, delivered &gt;20 % performance gain, FMEA validation.</p></div>
-        <div class="entry right"><h4>2020‑2023 • Team Captain – Stallion Motorsport</h4><p>Led 30‑member team; designed 80 kW EV; Formula Student Champion.</p></div>
+        <div class="entry left"><h4>2022‑2023 • Lead Powertrain Engineer – MV Innovations</h4><p>Calibrated BMS &amp; VCUs, delivered &gt;20 % performance gain, FMEA validation.</p></div>
+        <div class="entry right"><h4>2020‑2023 • Team Captain – Stallion Motorsport</h4><p>Led 30‑member team; designed 80 kW EV; Formula Student Champion.</p></div>
       </div>
     </section>
 
@@ -155,21 +196,21 @@
           <img src="assets/project-1.jpg" alt="Automatic Distance Control System simulation">
           <div class="caption">
             <h4>Automatic Distance Control System</h4>
-            <p>Simulink‑based emergency braking controller (1.2 s response).</p>
+            <p>Simulink‑based emergency braking controller (1.2 s response).</p>
           </div>
         </div>
         <div class="item">
           <img src="assets/project-2.jpg" alt="Formula E Gen3 BMS">
           <div class="caption">
             <h4>Formula E Gen3 BMS</h4>
-            <p>51 kWh pack; active/passive balancing; thermal optimization.</p>
+            <p>51 kWh pack; active/passive balancing; thermal optimization.</p>
           </div>
         </div>
         <div class="item">
-          <img src="assets/project-3.jpg" alt="500 V inverter and regenerative braking model">
+          <img src="assets/project-3.jpg" alt="500 V inverter and regenerative braking model">
           <div class="caption">
-            <h4>500 V Inverter &amp; Regen</h4>
-            <p>97‑99 % efficiency; regen braking energy recovery.</p>
+            <h4>500 V Inverter &amp; Regen</h4>
+            <p>97‑99 % efficiency; regen braking energy recovery.</p>
           </div>
         </div>
       </div>
@@ -180,7 +221,7 @@
       <h3 class="title">Education &amp; Awards</h3>
       <div class="edu-wrap">
         <div class="edu"><h4>MSc Motorsport Engineering – Oxford Brookes (2024)</h4><p>Merit; Dissertation on ADCS.</p></div>
-        <div class="edu"><h4>BEng Mechanical Engineering – Pune Univ. (2023)</h4><p>GPA 8/10; Electrical &amp; Electronics 89 %, AI/ML 90 %.</p></div>
+        <div class="edu"><h4>BEng Mechanical Engineering – Pune Univ. (2023)</h4><p>GPA 8/10; Electrical &amp; Electronics 89 %, AI/ML 90 %.</p></div>
         <div class="edu"><h4>Formula Student Champion 2023</h4><p>Overall winner; Mouser Innovation Award.</p></div>
       </div>
     </section>
